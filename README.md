@@ -1,1 +1,1 @@
-# myWeb
+This is my website which I am developing to showcase my learning on web development. This is still under development will be publishing the future versions and keep on adding new features and designing on this page.  
