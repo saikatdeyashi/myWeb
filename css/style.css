@@ -1,0 +1,14 @@
+body {
+  background-color: #dbedeb;
+}
+
+hr {
+  border-color: grey;
+  border-style: none;
+  height: 5px;
+}
+
+img {
+  border-radius: 50%;
+  height: 180px;
+}
