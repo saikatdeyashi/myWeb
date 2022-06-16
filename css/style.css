@@ -4,6 +4,37 @@ body {
   font-size: 18px;
 }
 
+nav {
+  background: #1966c4;
+  height: 50px;
+  width: 100%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+a:hover {
+  background: blue;
+  transition: .5s;
+}
+
 hr {
   border-color: grey;
   border-style: none;
@@ -17,7 +48,7 @@ img {
   height: 180px;
 }
 
-h1 , h3 {
+h1, h3 {
   color: #1966c4;
 }
 
