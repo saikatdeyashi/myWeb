@@ -1,57 +1,131 @@
+/* Basic styles for body */
 body {
-  background-color: #dbedeb;
-  font-family: Arial;
-  font-size: 18px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
-nav {
-  background: #1966c4;
-  height: 50px;
-  width: 100%;
-}
-
+/* Navigation styles */
 nav ul {
-  float: right;
-  margin-right: 20px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 nav ul li {
-  list-style: none;
-  display: inline-block;
+    margin: 10px;
 }
 
 nav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+    text-decoration: none;
+    color: #EA4C89;
+    font-weight: bold;
 }
 
-a:hover {
-  background: blue;
-  transition: .5s;
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Profile and experience section */
+table {
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+
+table img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+table td {
+    vertical-align: top;
+    padding: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+h3 {
+    color: #EA4C89;
+}
+
+p {
+    font-size: 1em;
+    color: #555;
 }
 
 hr {
-  border-color: grey;
-  border-style: none;
-  border-top-style: solid;
-  border-width: 2px;
-  width: 90%;
+    border: 1px solid #EA4C89;
+    width: 100%;
+    max-width: 900px;
+    margin: 20px 0;
 }
 
-img {
-  border-radius: 50%;
-  height: 180px;
-}
-
-h1, h3 {
-  color: #1966c4;
-}
-
+/* Work experience section */
 ul {
-  font-size: 18px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Education and skills section */
+table th, table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.skills-table td {
+    padding: 5px 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    table img {
+        width: 75px;
+        height: 75px;
+    }
+
+    table, table td {
+        display: block;
+        width: 100%;
+    }
+
+    table td {
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 576px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    table img {
+        width: 60px;
+        height: 60px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p, h3 {
+        text-align: center;
+    }
 }
